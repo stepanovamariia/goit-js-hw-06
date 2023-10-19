@@ -30,7 +30,7 @@ function createBoxes(amount) {
 			newDiv.style.width = parseInt(boxes[i - 1].style.width) + 10 + 'px';
 			newDiv.style.height = parseInt(boxes[i - 1].style.height) + 10 + 'px';
 		}
-		newDiv.style.color = getRandomHexColor();
+		newDiv.style.backgroundColor = getRandomHexColor();
 		boxes.push(newDiv);
 	}
 	for (const box of boxes) {
