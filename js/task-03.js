@@ -16,14 +16,12 @@ const images = [
 const galleryEl = document.querySelector('.gallery');
 
 const galleryImg = images
-	.map((image) => `<li><img src=${image.url} alt=${image.alt} ></li>`)
+	.map(
+		(image) =>
+			`<li><img src=${image.url} alt=${image.alt} class=gallery-img></li>`
+	)
 	.join('');
 
 galleryEl.insertAdjacentHTML('beforeend', galleryImg);
 
 galleryEl.classList.add('gallery');
-
-const imgEl = document.querySelectorAll('.gallery > img');
-imgEl.forEach((img) => {
-	img.classList.add('.gallery img');
-});

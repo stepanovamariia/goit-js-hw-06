@@ -24,13 +24,13 @@ button {
 }
 
 .gallery {
-	display: flex; /* Встановлюємо галерею як флекс-контейнер */
+	display: flex;
 	flex-direction: column;
 	list-style: none;
 	padding: 0;
 	gap: 30px;
 }
 
-.gallery img {
+.gallery-img {
 	width: 300px;
 }
